@@ -2,7 +2,7 @@
   "name": "mcpmeter",
   "version": "0.1.0",
   "description": "Usage meter for MCP — a passthrough stdio proxy that records per-tool latency, payload sizes and error rates, then aggregates whole sessions into analytics reports. Zero runtime dependencies.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
