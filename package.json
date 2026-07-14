@@ -1,0 +1,53 @@
+{
+  "name": "mcpmeter",
+  "version": "0.1.0",
+  "description": "Usage meter for MCP — a passthrough stdio proxy that records per-tool latency, payload sizes and error rates, then aggregates whole sessions into analytics reports. Zero runtime dependencies.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcpmeter": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "proxy",
+    "observability",
+    "latency",
+    "metrics",
+    "agent-tools"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/mcpmeter.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/mcpmeter#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/mcpmeter/issues"
+  }
+}

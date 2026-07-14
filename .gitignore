@@ -1,0 +1,26 @@
+# --- dependencies ---
+node_modules/
+
+# --- build outputs ---
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+*.tgz
+
+# --- recorded metrics (never commit real sessions) ---
+.mcpmeter/
+
+# --- env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- caches / editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+.cache/
+tmp/
+*.log
